@@ -1,0 +1,3 @@
+[submodule "projects/material-dashboard"]
+	path = projects/material-dashboard
+	url = https://github.com/creativetimofficial/material-dashboard.git

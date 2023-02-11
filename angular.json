@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-example-app",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -51,12 +51,19 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "projects/material-dashboard/assets",
+                "output": "assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           },
           "configurations": {
             "production": {
